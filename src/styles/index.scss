@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media(max-width: 1080px){
+  html{
+      font-size: 93.75% //converte para 15 px, por padrao o html começa com 16px ;
+  }
+}
+
+@media(max-width: 720px){
+  html{
+      font-size: 87.5%; // 14px;
+  }
+}
+
+:root {
+  --white: #FFF;
+  --gray-50: #F7F8FA;
+  --gray-100: #E6E8EB;
+  --gray-200: #AFB2B1;
+  --gray-500: #808080;
+  --gray-800: #494D4B;
+  --green-500: #04D361;
+  --purple-300: #9F75FF;
+  --purple-400: #9164FA;
+  --purple-500: #8257E5;
+  --purple-800: #6F4BC8;
+}
+
+// # Home Page #
+.home {
+  background-color: var(--purple-300);
+  height: 100vh;
+
+  .homeDivOne {
+    background-color: black;
+    // margin: 25px 250px;
+    height: 50%;
+    display: flex;
+    img{
+      background-repeat:no-repeat;
+      background-size: 100% 100%;
+    }
+    // background-image: url('https://xtech.com.br/config/imagens_conteudo/blogs/afinal-como-o-machine-learning-pode-afetar-a-area-de-ti.jpg');
+  }
+
+  .homeDivTwo {
+    background-color: var(--purple-300);
+    margin: 25px 200px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  
+    button{
+      width: 100px;
+      height: 100px;
+      font-family: sans-serif;
+      // display: inline-block;
+      font-size: 14px;
+      display:inline-block;
+      padding:0.35em 1.2em;
+      border:1px solid var(--green-500);
+      margin:0 0.3em 0.3em 0;
+      border-radius:50%;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-weight:300;
+      color:white;
+      text-align:center;
+      transition: all 0.2s;
+      background-color: var(--green-500);
+    }
+    button:hover{
+      color:white;
+      background-color: #060b26;
+    }
+  }
+}
+
+
+// ### Login Page ###
+.login{
+  background-color: var(--purple-800);
+  height: 100vh;
+  padding-top: 10%;
+
+  .login-form{
+    // background-color: red;
+    margin-left: 10%;
+
+    input{
+      margin-bottom: 5%;
+    }
+  }
+  .card{
+    display:flex;
+    margin: 0 auto;
+    
+    .btn-login{
+      font-family: sans-serif;
+      font-size: 16px;
+      color: white;
+      background-color: var(--green-500);
+      margin-top: 5%;
+      margin-left: 30%;
+      width: 80px;
+    }
+  }
+}
