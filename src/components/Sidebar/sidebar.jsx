@@ -7,8 +7,14 @@ export const SidebarData = [
 
     {
         title: 'Home',
-        path: '/',
+        path: '/home',
         icon: <AiIcons.AiFillHome/>,
+        cName : 'nav-text'
+    },
+    {
+        title: 'Dataset',
+        path: '/dataset',
+        icon: <FaIcons.FaDatabase/>,
         cName : 'nav-text'
     },
     {
@@ -17,17 +23,16 @@ export const SidebarData = [
         icon: <FaIcons.FaRobot/>,
         cName : 'nav-text'
     },
-    
-    {
-        title: 'Contato',
-        path: '/contact',
-        icon: <FaIcons.FaPhoneSquareAlt/>,
-        cName : 'nav-text'
-    },
     {
         title: 'Sobre',
         path: '/about',
         icon: <FaIcons.FaEnvelopeOpenText/>,
+        cName : 'nav-text'
+    },
+    {
+        title: 'Contato',
+        path: '/contact',
+        icon: <FaIcons.FaPhoneSquareAlt/>,
         cName : 'nav-text'
     }
 ]

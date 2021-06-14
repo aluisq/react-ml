@@ -1,15 +1,20 @@
 
 import React, { Component } from 'react';
-import Navbar from './components/Navbar/navbar';
-import Login from './pages/login';
-import Teste from './pages/teste';
+import {Router} from 'react-router-dom';
+import Routes from './routes'
+import history from './history'
+import {AuthProvider} from './components/Context/AuthContext'
 
-  class App extends Component {
+
+class App extends Component {
 
   render() {
     return(
-      <Login path={'/login'}/>
-      // <Teste/>
+      <AuthProvider>
+        <Router history={history}>
+          <Routes/>
+        </Router>
+      </AuthProvider>
     )
   }
 }

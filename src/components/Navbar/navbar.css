@@ -1,10 +1,12 @@
 .navbar {
     background-color: #060b26;
+
     height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: auto;
+    position: absolute;
   }
   
 .navbar span {
@@ -31,12 +33,15 @@ position: fixed;
 top: 0;
 left: -100%;
 transition: 850ms;
+z-index:98;
 }
 
 .nav-menu.active {
 left: 0;
 transition: 350ms;
 position: absolute;
+z-index:99;
+
 }
 
 .nav-text {
@@ -75,6 +80,7 @@ height: 80px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
+padding: 8px 0px 8px 30%;
 }
 
 span {

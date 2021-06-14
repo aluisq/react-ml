@@ -4,17 +4,6 @@
   box-sizing: border-box;
 }
 
-@media(max-width: 1080px){
-  html{
-      font-size: 93.75% //converte para 15 px, por padrao o html começa com 16px ;
-  }
-}
-
-@media(max-width: 720px){
-  html{
-      font-size: 87.5%; // 14px;
-  }
-}
 
 :root {
   --white: #FFF;
@@ -35,16 +24,17 @@
   background-color: var(--purple-300);
   height: 100vh;
 
+
   .homeDivOne {
     background-color: black;
     // margin: 25px 250px;
     height: 50%;
     display: flex;
+
     img{
       background-repeat:no-repeat;
-      background-size: 100% 100%;
+      width: 100%;
     }
-    // background-image: url('https://xtech.com.br/config/imagens_conteudo/blogs/afinal-como-o-machine-learning-pode-afetar-a-area-de-ti.jpg');
   }
 
   .homeDivTwo {
@@ -52,13 +42,11 @@
     margin: 25px 200px;
     display: flex;
     justify-content: center;
-    // align-items: center;
   
     button{
       width: 100px;
       height: 100px;
       font-family: sans-serif;
-      // display: inline-block;
       font-size: 14px;
       display:inline-block;
       padding:0.35em 1.2em;
@@ -81,7 +69,7 @@
 }
 
 
-// ### Login Page ###
+// # Login Page #
 .login{
   background-color: var(--purple-800);
   height: 100vh;
@@ -109,4 +97,252 @@
       width: 80px;
     }
   }
+}
+
+// # Model Page #
+.models{
+  background-color: var(--purple-300);
+  min-height:100vh;
+  display: flex;
+  
+  .models-content{
+    display: grid;
+    margin: 5% auto;
+    grid-gap: 30px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items:center;
+
+    @media (max-width: 500px)  {
+      padding: 0 10%;
+    }
+    padding: 0 30%;
+
+  }
+}
+
+// # About Page #
+.about{
+  background-color: var(--purple-300);
+  min-height:100vh;
+ 
+  .about-content{
+    font-family: sans-serif;
+    margin-top: 2%;
+    margin-left:auto;
+    margin-right: auto; 
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+    @media (max-width: 500px)  {
+      max-width: 320px;
+    }
+    
+    max-width: 600px;
+
+    h1,h3{
+      font-family:fantasy;
+    }
+   
+    ul{
+      text-align: left;
+    }
+
+    font-family: sans-serif;
+
+    img{
+      margin-top: 2%;
+      border-radius: 50%;
+      max-width: 100px;
+    }
+  }
+}
+
+// # Contact Page #
+.contact{
+  background-color: var(--purple-300);
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 5%;
+  display: flex;
+  
+  .contact-content{
+    font-family: fantasy;
+    border-radius: 2.5em;
+    background-color: aqua;
+    display: inline-block;
+    padding-left: 1.5%;
+    margin: 0 auto;
+
+    h1{
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px)  {
+      width: 70%;
+      height:70%;
+    }
+    width: 40%;
+    height: 40%;
+    
+  }
+}
+
+//  # Kmeans Page #
+
+.kmeans{
+  background-color: var(--purple-300);
+  min-height: 100vh;
+  height: 100%;
+
+  .kmeans-content{
+    border-radius: 2.5em;
+    background-color: #E6E8EB;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding-top: 5%;
+   
+    overflow-wrap: break-word;
+
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items:center;
+
+    ul {
+      font-size: small;
+    }
+
+    img{
+      @media (max-width: 500px)  {
+        max-width: 320px;
+      }
+      max-width: 120%;
+    }
+  }
+
+  #liauto1{
+    text{
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  #liauto2{
+    text {
+      color: green;
+      font-weight: bold;
+    }
+  }
+
+  #liauto3{
+    text{
+      color:yellow;
+      font-weight: bold;
+    }
+  }
+
+  #liauto4{
+    text{
+      color:blue;
+      font-weight: bold;
+    }
+  }
+
+  #liauto5{
+    text{
+      color:purple;
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+
+
+// ## Page Dataset ## 
+
+.dataset{
+  background-color: var(--purple-300);
+  min-height: 100vh;
+  height: 100%;
+
+
+  .dataset-search{
+    font-size:small;
+    font-family: sans-serif;
+    margin: 1% auto;
+    display:inline-block;
+    justify-content: space-around;
+    background-color: aquamarine;
+    border: 2px solid #060b26;;
+    border-radius: 5px;
+    label{
+      margin-left: 5px;
+    }
+  }
+
+  .dataset-content{
+    
+
+    input{
+      border-radius: 4px;
+      height: 35px;
+      font-family: sans-serif;
+      font-size: large;
+    }
+
+    padding: 2% 5%;
+  }
+
+  .DataTable{
+    font-family: sans-serif;
+  }
+}
+
+// Imagem do modal
+.imgModal {
+  @media (max-width: 500px)  {
+    max-width: 320px;
+  }
+}
+
+.lr{
+  background-color: var(--purple-300);
+  min-height: 100vh;
+  height: 100%;
+
+  .lr-content{
+    border-radius: 2.5em;
+    background-color: #E6E8EB;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding-top: 5%;
+   
+    overflow-wrap: break-word;
+
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items:center;
+
+    img{
+      @media (max-width: 500px)  {
+        max-width: 320px;
+      }
+      max-width: 120%;
+    }
+
+  }
+
 }
